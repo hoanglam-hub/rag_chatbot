@@ -23,7 +23,7 @@ else:
     vs = load_vectorstore()
 question = input("Question: ")
 retrieve = get_retriever(vs)
-generation(retrieve, prompt, question)
+print(generation(retrieve, prompt, question))
 
 
 
